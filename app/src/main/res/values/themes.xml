@@ -129,9 +129,9 @@
 		<item name="drawerSettings">@drawable/ic_menu_settings_dark</item>
 		<item name="drawerArrowStyle">@style/DSub.DrawerArrow</item>
 		<item name="colorPrimary">@color/lightPrimary</item>
-		<item name="colorPrimaryDark">@color/lightPrimaryDark</item>
+		<item name="colorPrimaryDark">@color/amoledBlack</item>
 		<item name="colorAccent">@color/lightAccent</item>
-		<item name="actionbarBackgroundColor">@color/lightPrimary</item>
+		<item name="actionbarBackgroundColor">@color/amoledBlack</item>
 		<item name="actionbarTitleStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Title</item>
 		<item name="actionbarSubtitleStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle</item>
 		<item name="actionbarPopupStyle">@style/ThemeOverlay.AppCompat.Dark</item>
@@ -148,7 +148,7 @@
 	<style name="Theme.DSub.Dark" parent="Theme.DSub.Dark.Base">
 	</style>
 	<style name="Theme.DSub.Black.Base" parent="Theme.DSub.Dark.Base">
-		<item name="cardBackgroundDrawable">@drawable/card_rounded_corners_black</item>
+		<item name="cardBackgroundDrawable">@drawable/card_rounded_corners_dark</item>
 		<item name="android:windowBackground">@android:color/black</item>
 	</style>
 	<style name="Theme.DSub.Black" parent="Theme.DSub.Black.Base">

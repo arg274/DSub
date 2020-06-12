@@ -71,7 +71,7 @@
     <string name="main.albums_starred">Starred</string>
     <string name="main.albums_random">Random</string>
 	<string name="main.albums_genres">Genres</string>
-	<string name="main.albums_year">Decades</string>
+	<string name="main.albums_year">Years</string>
 	<string name="main.albums_alphabetical">Alphabetically</string>
 	<string name="main.videos">Videos</string>
 	<string name="main.songs_genres">@string/main.albums_genres</string>

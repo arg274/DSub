@@ -9,13 +9,13 @@
 		android:id="@+id/basic_count_name"
 		android:layout_width="wrap_content"
 		android:layout_height="fill_parent"
-		android:textAppearance="?android:attr/textAppearanceMedium"
-		android:gravity="left|center_vertical"
-		android:paddingLeft="6dip"
-		android:paddingRight="6dip"
 		android:background="@android:color/transparent"
+		android:gravity="left|center_vertical"
+		android:paddingLeft="16dip"
+		android:paddingRight="16dip"
 		android:text="Text"
-		android:textColor="?android:textColorPrimary"/>
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textColor="?android:textColorPrimary" />
 
 	<TextView
 		android:id="@+id/basic_count_count"

@@ -10,13 +10,13 @@
 		android:layout_width="0dip"
 		android:layout_height="wrap_content"
 		android:layout_weight="1"
-		android:textAppearance="?android:attr/textAppearanceMedium"
-		android:gravity="left|center_vertical"
-		android:paddingLeft="6dip"
-		android:paddingRight="6dip"
-		android:minHeight="50dip"
 		android:background="@android:color/transparent"
-		android:textColor="?android:textColorPrimary"/>
+		android:gravity="left|center_vertical"
+		android:minHeight="50dip"
+		android:paddingLeft="16dip"
+		android:paddingRight="16dip"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textColor="?android:textColorPrimary" />
 
 	<ImageButton
 		android:id="@+id/item_star"

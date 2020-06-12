@@ -19,7 +19,7 @@
         android:orientation="vertical"
 		android:paddingLeft="11.0dip"
 		android:layout_gravity="center_vertical">
-			
+
 		<TextView
 			android:id="@+id/notification_title"
 			style="@style/NotificationText.Title"

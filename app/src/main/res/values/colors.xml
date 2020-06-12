@@ -8,9 +8,10 @@
 	<color name="holo_green_light">#ff99cc00</color>
 	<color name="holo_red_light">#ffff4444</color>
 
-	<color name="lightPrimary">#2196f3</color>
-	<color name="lightPrimaryDark">#1e88e5</color>
-	<color name="lightAccent">#448aff</color>
+	<color name="lightPrimary">#E91E63</color>
+	<color name="lightPrimaryDark">#E91E63</color>
+	<color name="lightAccent">#E91E63</color>
+	<color name="amoledBlack">#000000</color>
 
 	<color name="holoPrimary">#009688</color>
 	<color name="holoPrimaryDark">#00897b</color>

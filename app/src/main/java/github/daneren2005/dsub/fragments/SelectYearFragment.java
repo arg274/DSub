@@ -21,6 +21,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import github.daneren2005.dsub.R;
@@ -52,12 +53,12 @@ public class SelectYearFragment extends SelectRecyclerFragment<String> {
 
 	@Override
 	public List<String> getObjects(MusicService musicService, boolean refresh, ProgressListener listener) throws Exception {
-		List<String> decades = new ArrayList<>();
-		for(int i = 2010; i >= 1800; i -= 10) {
-			decades.add(String.valueOf(i));
+		List<String> years = new ArrayList<>();
+		for(int i = Calendar.getInstance().get(Calendar.YEAR); i >= 1900; i -= 1) {
+			years.add(String.valueOf(i));
 		}
 
-		return decades;
+		return years;
 	}
 
 	@Override
