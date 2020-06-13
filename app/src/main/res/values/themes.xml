@@ -61,8 +61,9 @@
 		<item name="colorPrimaryDark">@color/lightPrimaryDark</item>
 		<item name="colorAccent">@color/lightAccent</item>
 		<item name="actionbarBackgroundColor">@color/lightPrimary</item>
-		<item name="iconTintColorAccentedBackground">@color/white</item>
 		<item name="iconTintColor">@color/amoledBlack</item>
+		<item name="iconTintColorAccented">@color/lightAccent</item>
+		<item name="iconTintColorAccentedBackground">@color/white</item>
 		<item name="actionbarTitleStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse</item>
 		<item name="actionbarSubtitleStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse</item>
 		<item name="actionbarPopupStyle">@style/ThemeOverlay.AppCompat.Light</item>
@@ -136,6 +137,7 @@
 		<item name="colorAccent">@color/lightAccent</item>
 		<item name="actionbarBackgroundColor">@color/lightAccent</item>
 		<item name="iconTintColor">@color/white</item>
+		<item name="iconTintColorAccented">@color/lightAccent</item>
 		<item name="iconTintColorAccentedBackground">@color/white</item>
 		<item name="actionbarTitleStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Title</item>
 		<item name="actionbarSubtitleStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle</item>
@@ -159,6 +161,7 @@
 		<item name="colorAccent">@color/lightAccent</item>
 		<item name="actionbarBackgroundColor">@color/amoledBlack</item>
 		<item name="iconTintColor">@color/white</item>
+		<item name="iconTintColorAccented">@color/lightAccent</item>
 		<item name="iconTintColorAccentedBackground">@color/white</item>
 		<item name="cardBackgroundDrawable">@drawable/card_rounded_corners_dark</item>
 		<item name="android:windowBackground">@color/amoledBlack</item>

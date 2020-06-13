@@ -8,8 +8,8 @@
 	<ImageButton
 		android:id="@+id/download_repeat"
 		style="@style/PlaybackControl"
-		android:layout_width="35dip"
-		android:layout_height="35dip"
+		android:layout_width="30dip"
+		android:layout_height="30dip"
 		android:layout_alignParentLeft="true"
 		android:layout_centerVertical="true"
 		android:layout_marginLeft="20dip"
@@ -74,8 +74,8 @@
 	<ImageButton
 		android:id="@+id/download_toggle_list"
 		style="@style/PlaybackControl"
-		android:layout_width="35dip"
-		android:layout_height="35dip"
+		android:layout_width="30dip"
+		android:layout_height="30dip"
 		android:layout_alignParentRight="true"
 		android:layout_centerVertical="true"
 		android:layout_marginLeft="20dip"

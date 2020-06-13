@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
 	android:id="@+id/download_layout_container"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
@@ -19,7 +20,7 @@
 			<LinearLayout
 				android:id="@+id/download_album_art_layout"
 				android:layout_width="fill_parent"
-				android:layout_height="fill_parent"
+				android:layout_height="wrap_content"
 				android:background="@android:color/transparent"
 				android:orientation="vertical">
 
@@ -29,72 +30,67 @@
 					android:layout_weight="1">
 
 					<FrameLayout
-						android:layout_width="match_parent"
+						android:layout_width="300dip"
 						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
 						android:orientation="vertical">
 
-						<github.daneren2005.dsub.view.RecyclingImageView
-							android:id="@+id/download_album_art_image"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:layout_gravity="center_horizontal|top"
-							android:padding="40dip"
-							android:paddingLeft="40dip"
-							android:paddingTop="20dip"
-							android:paddingRight="40dip"
-							android:scaleType="fitCenter" />
-
-						<LinearLayout
-							android:id="@+id/download_overlay_buttons"
+						<android.support.v7.widget.CardView
 							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:layout_gravity="center_horizontal|bottom"
-							android:background="@color/overlayColor"
-							android:gravity="center"
-							android:orientation="horizontal"
-							android:visibility="invisible">
+							android:layout_height="300dp"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginTop="100dp"
+							card_view:cardBackgroundColor="?android:windowBackground"
+							card_view:cardCornerRadius="20dip"
+							card_view:cardElevation="@dimen/cardview_default_elevation">
 
-							<ImageButton
-								android:id="@+id/download_rating_bad"
-								style="@style/DownloadActionImageButton"
-								android:src="@drawable/ic_action_rating_bad_dark" />
+							<github.daneren2005.dsub.view.RecyclingImageView
+								android:id="@+id/download_album_art_image"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_gravity="center_horizontal|top"
+								android:scaleType="fitCenter" />
 
-							<ImageButton
-								android:id="@+id/download_star"
-								style="@style/DownloadActionImageButton"
-								android:src="@drawable/ic_toggle_star_outline_dark" />
+							<LinearLayout
+								android:id="@+id/download_overlay_buttons"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center_horizontal|bottom"
+								android:background="@color/overlayColor"
+								android:elevation="4dip"
+								android:gravity="center"
+								android:orientation="horizontal"
+								android:visibility="invisible">
 
-							<ImageButton
-								android:id="@+id/download_playback_speed"
-								style="@style/DownloadActionImageButton"
-								android:src="@drawable/speed_24px" />
+								<ImageButton
+									android:id="@+id/download_rating_bad"
+									style="@style/DownloadActionImageButton"
+									android:src="@drawable/ic_action_rating_bad_dark" />
 
-							<ImageButton
-								android:id="@+id/download_bookmark"
-								style="@style/DownloadActionImageButton"
-								android:src="@drawable/bookmark_24px" />
+								<ImageButton
+									android:id="@+id/download_star"
+									style="@style/DownloadActionImageButton"
+									android:src="@drawable/ic_toggle_star_outline_dark" />
 
-							<ImageButton
-								android:id="@+id/download_rating_good"
-								style="@style/DownloadActionImageButton"
-								android:src="@drawable/ic_action_rating_good_dark" />
-						</LinearLayout>
+								<ImageButton
+									android:id="@+id/download_playback_speed"
+									style="@style/DownloadActionImageButton"
+									android:src="@drawable/speed_24px" />
+
+								<ImageButton
+									android:id="@+id/download_bookmark"
+									style="@style/DownloadActionImageButton"
+									android:src="@drawable/bookmark_24px" />
+
+								<ImageButton
+									android:id="@+id/download_rating_good"
+									style="@style/DownloadActionImageButton"
+									android:src="@drawable/ic_action_rating_good_dark" />
+							</LinearLayout>
+						</android.support.v7.widget.CardView>
+
 					</FrameLayout>
 				</FrameLayout>
-
-				<TextView
-					android:id="@+id/download_status"
-					style="?attr/actionbarSubtitleStyle"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_gravity="center_horizontal"
-					android:layout_marginLeft="16dip"
-					android:layout_marginTop="6dp"
-					android:layout_marginRight="16dip"
-					android:ellipsize="end"
-					android:fontFamily="@font/custom_font"
-					android:singleLine="true"
-					android:textColor="?android:textColorSecondary" />
 
 				<TextView
 					android:id="@+id/download_song_title"
@@ -103,11 +99,25 @@
 					android:layout_height="wrap_content"
 					android:layout_gravity="center_horizontal"
 					android:layout_marginLeft="16dip"
+					android:layout_marginTop="20dip"
 					android:layout_marginRight="16dip"
 					android:fontFamily="@font/custom_font"
 					android:singleLine="true"
 					android:textColor="?android:textColorPrimary"
 					android:textStyle="bold" />
+
+				<TextView
+					android:id="@+id/download_status"
+					style="?attr/actionbarSubtitleStyle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginLeft="16dip"
+					android:layout_marginRight="16dip"
+					android:ellipsize="end"
+					android:fontFamily="@font/custom_font"
+					android:singleLine="true"
+					android:textColor="?android:textColorSecondary" />
 			</LinearLayout>
 
 			<include layout="@layout/download_playlist" />

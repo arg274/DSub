@@ -1301,7 +1301,7 @@ public class SelectDirectoryFragment extends SubsonicFragment implements Section
 		final ImageButton starButton = (ImageButton) header.findViewById(R.id.select_album_star);
 		if(directory != null && Util.getPreferences(context).getBoolean(Constants.PREFERENCES_KEY_MENU_STAR, true) && artistInfo == null) {
 			if(directory.isStarred()) {
-				starButton.setImageDrawable(DrawableTint.getTintedDrawable(context, R.drawable.ic_toggle_star));
+				starButton.setImageDrawable(DrawableTint.getTintedDrawable(context, R.drawable.star_24px));
 			} else {
 				starButton.setImageResource(DrawableTint.getDrawableRes(context, R.attr.star_outline));
 			}
