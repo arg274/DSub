@@ -156,9 +156,9 @@
 
 	<View
 		android:layout_width="fill_parent"
-		android:layout_height="1px"
-		android:background="?attr/colorPrimary"
-		android:layout_gravity="bottom"/>
+		android:layout_height="0px"
+		android:layout_gravity="bottom"
+		android:background="?attr/colorPrimary" />
 </FrameLayout>
 
 

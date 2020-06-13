@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="common.appname">DSub</string>
+    <string name="common.appname">DSub Apellai</string>
     <string name="common.ok">OK</string>
     <string name="common.save">Save</string>
     <string name="common.cancel">Cancel</string>
@@ -295,7 +295,7 @@
 	<string name="settings.cache_location_external">External</string>
 	<string name="settings.cache_clear">Clear Cache</string>
 	<string name="settings.cache_clear_complete">Finished clearing cache</string>
-    <string name="settings.testing_connection">Testing connection...</string>
+    <string name="settings.testing_connection">Testing connection…</string>
     <string name="settings.testing_ok">Connection is OK</string>
     <string name="settings.testing_unlicensed">Connection is OK. Server unlicensed.</string>
     <string name="settings.connection_failure">Connection failure.</string>

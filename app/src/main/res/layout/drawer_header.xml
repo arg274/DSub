@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="178dp"
-	android:background="@color/lightAccent"
+	android:background="?attr/actionbarBackgroundColor"
 	android:orientation="vertical"
 	android:weightSum="1">
 
@@ -48,7 +48,8 @@
 			android:layout_height="wrap_content"
 			android:layout_gravity="center_vertical"
 			android:paddingRight="20dp"
-			android:src="@drawable/main_select_server_dark" />
+			android:src="@drawable/keyboard_arrow_down_24px"
+			android:tint="?attr/iconTintColorAccentedBackground"/>
 	</LinearLayout>
 
 	<de.hdodenhof.circleimageview.CircleImageView

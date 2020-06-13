@@ -1078,7 +1078,7 @@ public class NowPlayingFragment extends SubsonicFragment implements OnGestureLis
 		final int position = downloadService.getPlayerPosition();
 		final Bookmark oldBookmark = currentSong.getBookmark();
 		currentSong.setBookmark(new Bookmark(position));
-		bookmarkButton.setImageDrawable(DrawableTint.getTintedDrawable(context, R.drawable.ic_menu_bookmark_selected));
+		bookmarkButton.setImageDrawable(DrawableTint.getTintedDrawable(context, R.drawable.bookmark_24px));
 
 		new SilentBackgroundTask<Void>(context) {
 			@Override
@@ -1111,7 +1111,7 @@ public class NowPlayingFragment extends SubsonicFragment implements OnGestureLis
 				if(oldBookmark == null) {
 					int bookmark;
 					if(context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
-						bookmark = R.drawable.ic_menu_bookmark_dark;
+						bookmark = R.drawable.bookmark_24px;
 					} else {
 						bookmark = DrawableTint.getDrawableRes(context, R.attr.bookmark);
 					}
@@ -1449,10 +1449,10 @@ public class NowPlayingFragment extends SubsonicFragment implements OnGestureLis
 		}
 
 		if(song != null && song.getBookmark() != null) {
-			bookmarkButton.setImageDrawable(DrawableTint.getTintedDrawable(context, R.drawable.ic_menu_bookmark_selected));
+			bookmarkButton.setImageDrawable(DrawableTint.getTintedDrawable(context, R.drawable.bookmark_24px));
 		} else {
 			if(context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
-				bookmark = R.drawable.ic_menu_bookmark_dark;
+				bookmark = R.drawable.bookmark_24px;
 			} else {
 				bookmark = DrawableTint.getDrawableRes(context, R.attr.bookmark);
 			}

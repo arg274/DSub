@@ -241,7 +241,7 @@ public abstract class UpdateView<T> extends LinearLayout {
 		if(moreButton != null) {
 			if(exists || pinned) {
 				if(!shaded) {
-					moreButton.setImageResource(exists ? R.drawable.download_cached : R.drawable.download_pinned);
+					moreButton.setImageResource(exists ? R.drawable.panorama_fish_eye_24px_accbg : R.drawable.offline_pin_24px);
 					shaded = true;
 				}
 			} else {

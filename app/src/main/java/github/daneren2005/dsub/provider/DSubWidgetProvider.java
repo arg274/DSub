@@ -212,9 +212,9 @@ public class DSubWidgetProvider extends AppWidgetProvider {
 
         // Set correct drawable for pause state
         if (playing) {
-            views.setImageViewResource(R.id.control_play, R.drawable.media_pause_dark);
+            views.setImageViewResource(R.id.control_play, R.drawable.pause_circle_outline_24px_accbg);
         } else {
-            views.setImageViewResource(R.id.control_play, R.drawable.media_start_dark);
+            views.setImageViewResource(R.id.control_play, R.drawable.play_circle_outline_24px_accbg);
         }
 
         // Set the cover art

@@ -253,14 +253,14 @@ public class SongView extends UpdateView2<MusicDirectory.Entry, Boolean> {
 		}
 
 		if (isWorkDone) {
-			int moreImage = isSaved ? R.drawable.download_pinned : R.drawable.download_cached;
+			int moreImage = isSaved ? R.drawable.offline_pin_24px : R.drawable.panorama_fish_eye_24px_accbg;
 			if(moreImage != this.moreImage) {
 				moreButton.setImageResource(moreImage);
 				this.moreImage = moreImage;
 			}
-		} else if(this.moreImage != R.drawable.download_none_light) {
+		} else if(this.moreImage != R.drawable.more_vert_24px) {
 			moreButton.setImageResource(DrawableTint.getDrawableRes(context, R.attr.download_none));
-			this.moreImage = R.drawable.download_none_light;
+			this.moreImage = R.drawable.more_vert_24px;
 		}
 
 		if (downloadFile.isDownloading() && !downloadFile.isDownloadCancelled() && partialFileExists) {
@@ -293,7 +293,7 @@ public class SongView extends UpdateView2<MusicDirectory.Entry, Boolean> {
 		if(isBookmarked) {
 			if(!isBookmarkedShown) {
 				if(bookmarkButton.getDrawable() == null) {
-					bookmarkButton.setImageDrawable(DrawableTint.getTintedDrawable(context, R.drawable.ic_menu_bookmark_selected));
+					bookmarkButton.setImageDrawable(DrawableTint.getTintedDrawable(context, R.drawable.bookmark_24px));
 				}
 
 				bookmarkButton.setVisibility(View.VISIBLE);

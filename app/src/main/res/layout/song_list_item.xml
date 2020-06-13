@@ -50,8 +50,8 @@
 				android:background="@null"
 				android:focusable="false"
 				android:scaleType="fitCenter"
-				android:visibility="gone"/>
-					
+				android:visibility="gone" />
+
 			<ImageButton
 				android:id="@+id/song_star"
 				android:layout_width="@dimen/Star.Small"
@@ -84,9 +84,9 @@
 				android:id="@+id/song_status_icon"
 				android:layout_width="@dimen/SongStatusIcon"
 				android:layout_height="@dimen/SongStatusIcon"
-				android:layout_gravity="top"
+				android:layout_gravity="center_vertical"
 				android:src="?attr/downloading"
-				android:visibility="gone"/>
+				android:visibility="gone" />
         </LinearLayout>
 
         <LinearLayout

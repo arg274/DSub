@@ -64,6 +64,9 @@
 	<attr name="drawerSubtitleStyle" format="reference"/>
 	<attr name="cardBackgroundDrawable" format="reference"/>
 	<attr name="drawerHeaderBackground" format="reference"/>
+	<attr name="iconTintColor" format="reference|color"/>
+	<attr name="iconTintColorAccented" format="reference|color"/>
+	<attr name="iconTintColorAccentedBackground" format="reference|color"/>
 
 	<declare-styleable name="SeekBarPreference">
 		<attr name="min" format="integer"/>

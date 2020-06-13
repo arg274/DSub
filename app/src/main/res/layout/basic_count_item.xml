@@ -22,7 +22,7 @@
 		android:layout_width="32dp"
 		android:layout_height="32dp"
 		android:layout_marginRight="12dp"
-		android:background="@drawable/ic_number_border"
+		android:background="@drawable/panorama_fish_eye_24px_accbg"
 		android:focusable="false"
 		android:paddingRight="10dp"
 		android:layout_marginLeft="20px"

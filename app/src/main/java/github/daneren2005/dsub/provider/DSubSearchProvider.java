@@ -144,16 +144,16 @@ public class DSubSearchProvider extends ContentProvider {
 		for(Object obj: results) {
 			if(obj instanceof Artist) {
 				Artist artist = (Artist) obj;
-				String icon = RESOURCE_PREFIX + R.drawable.ic_action_artist;
+				String icon = RESOURCE_PREFIX + R.drawable.mic_24px;
 				cursor.addRow(new Object[]{artist.getId().hashCode(), artist.getName(), null, "ar-" + artist.getId(), artist.getName(), icon});
 			} else {
 				MusicDirectory.Entry entry = (MusicDirectory.Entry) obj;
 				
 				if(entry.isDirectory()) {
-					String icon = RESOURCE_PREFIX + R.drawable.ic_action_album;
+					String icon = RESOURCE_PREFIX + R.drawable.album_24px;
 					cursor.addRow(new Object[]{entry.getId().hashCode(), entry.getTitle(), entry.getArtist(), entry.getId(), entry.getTitle(), icon});
 				} else {
-					String icon = RESOURCE_PREFIX + R.drawable.ic_action_song;
+					String icon = RESOURCE_PREFIX + R.drawable.audiotrack_24px;
 					String id;
 					if(Util.isTagBrowsing(getContext())) {
 						id = entry.getAlbumId();

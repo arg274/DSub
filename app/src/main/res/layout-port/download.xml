@@ -67,12 +67,12 @@
 							<ImageButton
 								android:id="@+id/download_playback_speed"
 								style="@style/DownloadActionImageButton"
-								android:src="@drawable/ic_action_playback_speed_dark" />
+								android:src="@drawable/speed_24px" />
 
 							<ImageButton
 								android:id="@+id/download_bookmark"
 								style="@style/DownloadActionImageButton"
-								android:src="@drawable/ic_menu_bookmark_dark" />
+								android:src="@drawable/bookmark_24px" />
 
 							<ImageButton
 								android:id="@+id/download_rating_good"
