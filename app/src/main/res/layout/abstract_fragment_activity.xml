@@ -72,29 +72,34 @@
 
 					<TextView
 						android:id="@+id/track_name"
-						android:layout_height="wrap_content"
+						style="?attr/actionbarTitleStyle"
 						android:layout_width="wrap_content"
-						android:singleLine="true"
-						android:text="@string/main.title"
+						android:layout_height="wrap_content"
 						android:ellipsize="marquee"
-						android:marqueeRepeatLimit="marquee_forever"
-						android:scrollHorizontally="true"
 						android:focusable="true"
 						android:focusableInTouchMode="true"
-						style="?attr/actionbarTitleStyle">
+						android:fontFamily="@font/custom_font"
+						android:marqueeRepeatLimit="marquee_forever"
+						android:scrollHorizontally="true"
+						android:singleLine="true"
+						android:text="@string/main.title"
+						android:textSize="18sp"
+						android:textStyle="normal">
 
-						<requestFocus android:focusable="true"
-							android:focusableInTouchMode="true"
-							android:duplicateParentState="true" />
+						<requestFocus
+							android:duplicateParentState="true"
+							android:focusable="true"
+							android:focusableInTouchMode="true" />
 					</TextView>
 
 					<TextView
 						android:id="@+id/artist_name"
-						android:layout_height="wrap_content"
+						style="?attr/actionbarSubtitleStyle"
 						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/custom_font"
 						android:singleLine="true"
-						android:text="@string/main.artist"
-						style="?attr/actionbarSubtitleStyle"/>
+						android:text="@string/main.artist" />
 				</LinearLayout>
 
 

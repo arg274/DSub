@@ -3,25 +3,26 @@ apply plugin: 'com.android.application'
 android {
 	compileSdkVersion 27
 
-    defaultConfig {
+	defaultConfig {
 		applicationId "github.daneren2005.dsub"
-        minSdkVersion 21
-		targetSdkVersion 26
-        versionCode 205
-        versionName 'Apellai 1'
+		minSdkVersion 26
+		targetSdkVersion 30
+        versionCode 206
+        versionName 'Apellai 2'
 		setProperty("archivesBaseName", "DSub $versionName")
 		resConfigs "de", "es", "fr", "hu", "nl", "pt-rPT", "ru", "sv"
-	}
+		signingConfig signingConfigs.debug
+    }
 	buildTypes {
 		release {
-			minifyEnabled true
-			shrinkResources true
+			minifyEnabled false
+			shrinkResources false
 			proguardFiles 'proguard.cfg'
 			zipAlignEnabled true
 		}
 		fix {
-			minifyEnabled true
-			shrinkResources true
+			minifyEnabled false
+			shrinkResources false
 			proguardFiles 'proguard.cfg'
 			zipAlignEnabled true
 		}

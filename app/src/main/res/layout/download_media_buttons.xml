@@ -5,13 +5,14 @@
               android:layout_width="fill_parent"
               android:layout_height="wrap_content">
 
-    <ImageButton
-            style="@style/PlaybackControl"
-            android:id="@+id/download_repeat"
-            android:src="?attr/media_button_repeat_off"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            />
+	<ImageButton
+		android:id="@+id/download_repeat"
+		style="@style/PlaybackControl"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+		android:src="?attr/media_button_repeat_off" />
 
     <github.daneren2005.dsub.view.AutoRepeatButton
             style="@style/PlaybackControl.Small"
@@ -68,11 +69,12 @@
             android:layout_centerVertical="true"
             />
 
-    <ImageButton
-            style="@style/PlaybackControl"
-			android:id="@+id/download_toggle_list"
-			android:src="?attr/toggle_list"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            />
+	<ImageButton
+		android:id="@+id/download_toggle_list"
+		style="@style/PlaybackControl"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+		android:src="?attr/toggle_list" />
 </RelativeLayout>
