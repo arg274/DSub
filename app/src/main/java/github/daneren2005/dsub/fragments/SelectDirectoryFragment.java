@@ -1123,7 +1123,7 @@ public class SelectDirectoryFragment extends SubsonicFragment implements Section
 					imageDialog.show();
 				}
 			});
-			imageLoader.loadImage(coverArtView, url, false);
+			imageLoader.loadImage(coverArtView, url, true);
 		} else if(entries.size() > 0) {
 			coverArtRep = null;
 			this.coverArtView = coverArtView;
@@ -1151,7 +1151,7 @@ public class SelectDirectoryFragment extends SubsonicFragment implements Section
 			});
 			synchronized (coverArtRep) {
 				coverArtId = coverArtRep.getCoverArt();
-				updateCoverArtTask = imageLoader.loadImage(coverArtView, coverArtRep, false, true);
+				updateCoverArtTask = imageLoader.loadImage(coverArtView, coverArtRep, true, true);
 			}
 		}
 
